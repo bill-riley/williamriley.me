@@ -6,87 +6,126 @@ block vars
 	- var title = "Services";
 	- var description = "William M. Riley is a Freelance Product Developer. Here's what he does!";
 	- var keywords = "";
+	- var hero_image_name = "services";
 
 block hero
 	copy-wrap(align="left")
-		h1.fs-massive.theme-base5.fw8.lh-solid Services
-		p.fs5.lh-copy.theme-complement6 Your boy is a full-stack engineer with a strong eye for design. Strategically using technology to solve design problems is my jam. And I love teaching people about the different ways to use different&nbsp;technologies.
+		h1.fs-massive.theme-base5.fw8.lh-solid.long-shadow-tr Services
+		p.fs5.lh-copy.theme-complement1 Your boy is a full-stack engineer with a strong eye for design. Strategically using technology to solve design problems is my jam. And I love teaching people about the different ways to use different&nbsp;technologies.
 
 block content
 	//- Engineering
-	stellar-layout.bg-theme-complement9.theme-yellow.complement-indigo
-		copy-wrap(align="left")
-			h1.theme-base2.fw6 Engineering
-				br
-				small.theme-complement2.fs6 Front-end, Back-end, Applications, Accessibility, Performance, Testing
-			p.fs6.lh-copy.white I love making things come to life in the browser. I’m super comfortable working with Node, Ruby, PHP, HTML, React, Vue, ES6+, TypeScript, and my favorite plain ol&rsquo; CSS. and I&rsquo;m learning Go 😱. I love building interfaces, apps, and websites. Whether it’s a simple, performant marketing site or a big, fancy interface talking to multiple APIs - that&rsquo;s my&nbsp;jam.
-			hr.mv4.bg-theme-complement8
-			p
-				stellar-tag(color="theme-base7").mb1.mr1 JavaScript (ES6+)
-				stellar-tag(color="theme-base7").mb1.mr1 TypeScript
-				stellar-tag(color="theme-base7").mb1.mr1 CSS
-				stellar-tag(color="theme-base7").mb1.mr1 Node
-				stellar-tag(color="theme-base7").mb1.mr1 React
-				stellar-tag(color="theme-base7").mb1.mr1 Vue
-				stellar-tag(color="theme-base7").mb1.mr1 Express
-				stellar-tag(color="theme-base7").mb1.mr1 Polymer
-				stellar-tag(color="theme-base7").mb1.mr1 Ruby
-				stellar-tag(color="theme-base7").mb1.mr1 Ruby on Rails
-				stellar-tag(color="theme-base7").mb1.mr1 PHP
-				stellar-tag(color="theme-base7").mb1.mr1 Laravel
-				stellar-tag(color="theme-base7").mb1.mr1 Postgres
-				stellar-tag(color="theme-base7").mb1.mr1 MySQL
+	stellar-layout.bg-theme-complement8.theme-yellow.complement-indigo.overflow-hidden(type="supporting-content")
+		section
+			copy-wrap(align="left")
+				h1.theme-base2.fw6
+					span.fs-large.long-shadow-tl Engineering
+					br
+					small.theme-complement2.fs6 Front-end, Back-end, Applications, Accessibility, Performance,&nbsp;Testing
+				p.fs6.lh-copy.white I love making things come to life in the browser. I’m super comfortable working with Node, Ruby, PHP, HTML, React, Vue, ES6+, TypeScript, and my favorite plain ol&rsquo; CSS. and I&rsquo;m learning Go 😱. I love building interfaces, apps, and websites. Whether it’s a simple, performant marketing site or a big, fancy interface talking to multiple APIs - that&rsquo;s my&nbsp;jam.
+				hr.mv4.bg-theme-complement8
+				p
+					stellar-tag(color="theme-base7").mb2.mr3 JavaScript (ES6+)
+					stellar-tag(color="theme-base7").mb2.mr3 TypeScript
+					stellar-tag(color="theme-base7").mb2.mr3 CSS
+					stellar-tag(color="theme-base7").mb2.mr3 Node
+					stellar-tag(color="theme-base7").mb2.mr3 React
+					stellar-tag(color="theme-base7").mb2.mr3 Vue
+					stellar-tag(color="theme-base7").mb2.mr3 Express
+					stellar-tag(color="theme-base7").mb2.mr3 Polymer
+					stellar-tag(color="theme-base7").mb2.mr3 Ruby
+					stellar-tag(color="theme-base7").mb2.mr3 Ruby on Rails
+					stellar-tag(color="theme-base7").mb2.mr3 PHP
+					stellar-tag(color="theme-base7").mb2.mr3 Laravel
+					stellar-tag(color="theme-base7").mb2.mr3 Golang
+					stellar-tag(color="theme-base7").mb2.mr3 Postgres
+					stellar-tag(color="theme-base7").mb2.mr3 MySQL
+
+		aside
+			stellar-video.s-right-point(overlay preload="auto" autoplay muted playsinline poster="/assets/video/engineering-sd.jpg")
+				source(src="/assets/video/engineering-sd.mp4?c=1")
+				source(src="/assets/video/engineering-sd.mp4?c=1" type="video/mp4" media="(min-device-pixel-ratio:2), (-webkit-min-device-pixel-ratio:2), (min--moz-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2)")
+				source(src="/assets/video/engineering-sd.mp4?c=1" type="video/mp4" media="(max-device-pixel-ratio:1), (-webkit-max-device-pixel-ratio:1), (max--moz-device-pixel-ratio:1), (-o-max-device-pixel-ratio:1)")
 
 	//- Strategy
-	stellar-layout.bg-theme-complement9.theme-lime.complement-violet
-		copy-wrap(align="right")
-			h1.theme-base2.fw6 Strategy
-				br
-				small.theme-complement2.fs6 Project planning, scoping, exploration, wire-framing, prototyping, user testing
-			p.fs6.lh-copy.white A great idea can be easy to come by, but it&rsquo;s always hard to make a reality. It involves planning, conversations, and sketching. Verifying that you have a clear idea of the problems you want to solve is what strategy is all about. I have plenty of experience finding and solving problems that improve the big ass numbers like acquisition, retention, and engagement. Let&rsquo;s get that MRR&nbsp;up!!&nbsp;📈
-			hr.mv4.bg-theme-complement8
-			p
-				stellar-tag(color="theme-base7").mb1.mr1 Jira/Atlassian
-				stellar-tag(color="theme-base7").mb1.mr1 Basecamp
-				stellar-tag(color="theme-base7").mb1.mr1 Trello
-				stellar-tag(color="theme-base7").mb1.mr1 Hubspot
-				stellar-tag(color="theme-base7").mb1.mr1 Whimsical
-				stellar-tag(color="theme-base7").mb1.mr1 Agile
-				stellar-tag(color="theme-base7").mb1.mr1 Kanban
-				stellar-tag(color="theme-base7").mb1.mr1 Scrum
-				stellar-tag(color="theme-base7").mb1.mr1 Business Modeling
+	stellar-layout.bg-theme-complement8.theme-lime.complement-violet.overflow-hidden(type="supporting-content-right")
+		section
+			copy-wrap(align="right")
+				h1.theme-base2.fw6
+					span.fs-large.long-shadow-tr Strategy
+					br
+					small.theme-complement2.fs6 Project Planning, Scoping, Exploration, Wire-Framing, Prototyping, User&nbsp;Testing
+				p.fs6.lh-copy.white A great idea can be easy to come by, but it&rsquo;s always hard to make a reality. It involves planning, conversations, and sketching. Verifying that you have a clear idea of the problems you want to solve is what strategy is all about. I have plenty of experience finding and solving problems that improve the big ass numbers like acquisition, retention, and engagement. Let&rsquo;s get that MRR&nbsp;up!!&nbsp;📈
+				hr.mv4.bg-theme-complement8
+				p
+					stellar-tag(color="theme-base7").mb2.mr3 Jira/Atlassian
+					stellar-tag(color="theme-base7").mb2.mr3 Basecamp
+					stellar-tag(color="theme-base7").mb2.mr3 Trello
+					stellar-tag(color="theme-base7").mb2.mr3 Hubspot
+					stellar-tag(color="theme-base7").mb2.mr3 Whimsical
+					stellar-tag(color="theme-base7").mb2.mr3 Agile
+					stellar-tag(color="theme-base7").mb2.mr3 Kanban
+					stellar-tag(color="theme-base7").mb2.mr3 Scrum
+					stellar-tag(color="theme-base7").mb2.mr3 Business Modeling
+
+		aside
+			stellar-video.s-left-point(overlay preload="auto" autoplay muted playsinline poster="/assets/video/strategy-sd.jpg")
+				source(src="/assets/video/strategy-sd.mp4?c=1")
+				source(src="/assets/video/strategy-sd.mp4?c=1" type="video/mp4" media="(min-device-pixel-ratio:2), (-webkit-min-device-pixel-ratio:2), (min--moz-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2)")
+				source(src="/assets/video/strategy-sd.mp4?c=1" type="video/mp4" media="(max-device-pixel-ratio:1), (-webkit-max-device-pixel-ratio:1), (max--moz-device-pixel-ratio:1), (-o-max-device-pixel-ratio:1)")
 
 	//- Design
-	stellar-layout.bg-theme-complement9.theme-green.complement-blue
-		copy-wrap(align="left")
-			h1.theme-base2.fw6 Design
-				br
-				small.theme-complement2.fs6 Design Systems, Motion, Animation, Responsive, Sound
-			p.fs6.lh-copy.white When I&rsquo;m doing UI Design, I&rsquo;m focused on making a cohesive design language. I lead with design systems, because I try really hard to make sure I&rsquo;m using reusable, realistic, and testable components. I make a design system for every frontend&nbsp;project.
-			hr.mv4.bg-theme-complement8
-			p
-				stellar-tag(color="theme-base7").mb1.mr1 Sketch
-				stellar-tag(color="theme-base7").mb1.mr1 Figma
-				stellar-tag(color="theme-base7").mb1.mr1 Invision
-				stellar-tag(color="theme-base7").mb1.mr1 Invision Studio
-				stellar-tag(color="theme-base7").mb1.mr1 Webflow
-				stellar-tag(color="theme-base7").mb1.mr1 Zeplin
-				stellar-tag(color="theme-base7").mb1.mr1 Lottie
-				stellar-tag(color="theme-base7").mb1.mr1 Hemingway
-				stellar-tag(color="theme-base7").mb1.mr1 Contrast
-				stellar-tag(color="theme-base7").mb1.mr1 Notion
+	stellar-layout.bg-theme-complement8.theme-green.complement-blue.overflow-hidden(type="supporting-content")
+		section
+			copy-wrap(align="left")
+				h1.theme-base2.fw6
+					span.fs-large.long-shadow-tl Design
+					br
+					small.theme-complement2.fs6 Design Systems, Motion, Animation, Responsive,&nbsp;Sound
+				p.fs6.lh-copy.white When I&rsquo;m doing UI Design, I&rsquo;m focused on making a cohesive design language. I lead with design systems, because I try really hard to make sure I&rsquo;m using reusable, realistic, and testable components. I make a design system for every frontend&nbsp;project.
+				hr.mv4.bg-theme-complement8
+				p
+					stellar-tag(color="theme-base7").mb2.mr3 Sketch
+					stellar-tag(color="theme-base7").mb2.mr3 Figma
+					stellar-tag(color="theme-base7").mb2.mr3 Invision
+					stellar-tag(color="theme-base7").mb2.mr3 Invision Studio
+					stellar-tag(color="theme-base7").mb2.mr3 Webflow
+					stellar-tag(color="theme-base7").mb2.mr3 Zeplin
+					stellar-tag(color="theme-base7").mb2.mr3 Lottie
+					stellar-tag(color="theme-base7").mb2.mr3 Hemingway
+					stellar-tag(color="theme-base7").mb2.mr3 Contrast
+					stellar-tag(color="theme-base7").mb2.mr3 Notion
 
+		aside
+			stellar-video.s-right-point(overlay preload="auto" autoplay muted playsinline poster="/assets/video/design-sd.jpg")
+				source(src="/assets/video/design-sd.mp4?c=1")
+				source(src="/assets/video/design-sd.mp4?c=1" type="video/mp4" media="(min-device-pixel-ratio:2), (-webkit-min-device-pixel-ratio:2), (min--moz-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2)")
+				source(src="/assets/video/design-sd.mp4?c=1" type="video/mp4" media="(max-device-pixel-ratio:1), (-webkit-max-device-pixel-ratio:1), (max--moz-device-pixel-ratio:1), (-o-max-device-pixel-ratio:1)")
 	//- Data
-	stellar-layout.bg-theme-complement9.theme-lime.complement-cyan
-		copy-wrap(align="right")
-			h1.theme-base2.fw6 Data
-				br
-				small.theme-complement2.fs6 Data Visualization, Data Engineering, ETL processing
-			p.fs6.lh-copy.white Working with data, understanding the correlation between a collection of numbers so you can understand how well or poor your products or campaigns are running, that&rsquo;s right, your boy can do that. As an engineer, as a designer, and as a strategist - it&rsquo;s important to understand how to measure success. I can help you answer any kinds of&nbsp;questions.
-			hr.mv4.bg-theme-complement8
-			p
-				stellar-tag(color="theme-base7").mb1.mr1 Tableau
-				stellar-tag(color="theme-base7").mb1.mr1 Highcharts
-				stellar-tag(color="theme-base7").mb1.mr1 Stitch
-				stellar-tag(color="theme-base7").mb1.mr1 Hubspot
-				stellar-tag(color="theme-base7").mb1.mr1 Redshift
+	stellar-layout.bg-theme-complement8.theme-lime.complement-cyan.overflow-hidden(type="supporting-content-right")
+		section
+			copy-wrap(align="right")
+				h1.theme-base2.fw6
+					span.fs-large.long-shadow-tr Data
+					br
+					small.theme-complement2.fs6 Data Visualization, Data Engineering, ETL&nbsp;Processing
+				p.fs6.lh-copy.white Working with data, understanding the correlation between a collection of numbers so you can understand how well or poor your products or campaigns are running, that&rsquo;s right, your boy can do that. As an engineer, as a designer, and as a strategist - it&rsquo;s important to understand how to measure success. I can help you answer any kinds of&nbsp;questions.
+				hr.mv4.bg-theme-complement8
+				p
+					stellar-tag(color="theme-base7").mb2.mr3 Tableau
+					stellar-tag(color="theme-base7").mb2.mr3 Highcharts
+					stellar-tag(color="theme-base7").mb2.mr3 Stitch
+					stellar-tag(color="theme-base7").mb2.mr3 Hubspot
+					stellar-tag(color="theme-base7").mb2.mr3 Redshift
+					stellar-tag(color="theme-base7").mb2.mr3 Google BigQuery
+					stellar-tag(color="theme-base7").mb2.mr3 Firebase
+					stellar-tag(color="theme-base7").mb2.mr3 Spreadsheets
+					stellar-tag(color="theme-base7").mb2.mr3 Segment
+					stellar-tag(color="theme-base7").mb2.mr3 MixPanel
+					stellar-tag(color="theme-base7").mb2.mr3 ChartMogul
+
+		aside
+			stellar-video.s-left-point(overlay preload="auto" autoplay muted playsinline poster="/assets/video/data-sd.jpg")
+				source(src="/assets/video/data-sd.mp4?c=1")
+				source(src="/assets/video/data-sd.mp4?c=1" type="video/mp4" media="(min-device-pixel-ratio:2), (-webkit-min-device-pixel-ratio:2), (min--moz-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2)")
+				source(src="/assets/video/data-sd.mp4?c=1" type="video/mp4" media="(max-device-pixel-ratio:1), (-webkit-max-device-pixel-ratio:1), (max--moz-device-pixel-ratio:1), (-o-max-device-pixel-ratio:1)")

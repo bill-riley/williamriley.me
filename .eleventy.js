@@ -6,6 +6,7 @@ module.exports = {
     "svg",
     "png",
     "jpg",
+    "mp4",
     "css"
   ],
   passthroughFileCopy: true

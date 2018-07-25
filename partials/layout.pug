@@ -8,6 +8,7 @@
 - var description = "Split Infinities is the site for William M. Riley";
 - var keywords = "";
 - var show_hero = true;
+- var hero_image_name = "cardboard";
 
 block vars
 
@@ -47,6 +48,7 @@ html(class=`theme-${theme} complement-${complement} hanken-sans` lang="en-US")
 
 		link(rel="manifest" href="/manifest.json")
 		link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+		link(rel="preload" href="/assets/img/favicon.png")
 
 		//- block styles
 		//- 	link(href='/build/stellar.css' rel='stylesheet' type='text/css')
@@ -84,8 +86,7 @@ html(class=`theme-${theme} complement-${complement} hanken-sans` lang="en-US")
 					stellar-starscape.z-1.h-100
 					stellar-parallax.flex.z-2.white
 						stellar-parallax-section.w-100.mt6(speed="2")
-							stellar-scatter(floating min="-100" max="100" sizes)
-								stellar-asset(src=`/assets/vector/beaker.svg`)
+							stellar-scatter(floating min="-100" max="100" sizes colors)
 								stellar-asset(src=`/assets/vector/circle-outline.svg`)
 								stellar-asset(src=`/assets/vector/circle.svg`)
 								stellar-asset(src=`/assets/vector/diamond-outline.svg`)
@@ -102,8 +103,6 @@ html(class=`theme-${theme} complement-${complement} hanken-sans` lang="en-US")
 								stellar-asset(src=`/assets/vector/squiggle.svg`)
 								stellar-asset(src=`/assets/vector/triangle-outline.svg`)
 								stellar-asset(src=`/assets/vector/triangle.svg`)
-								stellar-asset(src=`/assets/vector/x.svg`)
-								stellar-asset(src=`/assets/vector/beaker.svg`)
 								stellar-asset(src=`/assets/vector/circle-outline.svg`)
 								stellar-asset(src=`/assets/vector/circle.svg`)
 								stellar-asset(src=`/assets/vector/diamond-outline.svg`)
@@ -120,11 +119,9 @@ html(class=`theme-${theme} complement-${complement} hanken-sans` lang="en-US")
 								stellar-asset(src=`/assets/vector/squiggle.svg`)
 								stellar-asset(src=`/assets/vector/triangle-outline.svg`)
 								stellar-asset(src=`/assets/vector/triangle.svg`)
-								stellar-asset(src=`/assets/vector/x.svg`)
 
 						stellar-parallax-section.w-100.mt6(speed="-3")
 							stellar-scatter(floating min="-100" max="100" sizes)
-								stellar-asset(src=`/assets/vector/beaker.svg`)
 								stellar-asset(src=`/assets/vector/circle-outline.svg`)
 								stellar-asset(src=`/assets/vector/circle.svg`)
 								stellar-asset(src=`/assets/vector/diamond-outline.svg`)
@@ -141,8 +138,6 @@ html(class=`theme-${theme} complement-${complement} hanken-sans` lang="en-US")
 								stellar-asset(src=`/assets/vector/squiggle.svg`)
 								stellar-asset(src=`/assets/vector/triangle-outline.svg`)
 								stellar-asset(src=`/assets/vector/triangle.svg`)
-								stellar-asset(src=`/assets/vector/x.svg`)
-								stellar-asset(src=`/assets/vector/beaker.svg`)
 								stellar-asset(src=`/assets/vector/circle-outline.svg`)
 								stellar-asset(src=`/assets/vector/circle.svg`)
 								stellar-asset(src=`/assets/vector/diamond-outline.svg`)
@@ -159,22 +154,24 @@ html(class=`theme-${theme} complement-${complement} hanken-sans` lang="en-US")
 								stellar-asset(src=`/assets/vector/squiggle.svg`)
 								stellar-asset(src=`/assets/vector/triangle-outline.svg`)
 								stellar-asset(src=`/assets/vector/triangle.svg`)
-								stellar-asset(src=`/assets/vector/x.svg`)
 
 						stellar-parallax-section
-							stellar-image.nt6.db.relative.z-2.w-60.mr7(width="698" height="393.5" preload="/assets/img/cardboard/thumb.jpg")
-								source(srcset="/assets/img/cardboard/full.jpg" media="(min-width:1023px) and (min-device-pixel-ratio: 2)")
-								source(srcset="/assets/img/cardboard/medium.jpg" media="(min-width:1023px)")
-								source(srcset="/assets/img/cardboard/medium.jpg" media="(max-width:640px) and (min-device-pixel-ratio: 2)")
-								source(srcset="/assets/img/cardboard/small.jpg" media="(max-width:640px)")
-								img(srcset="/assets/img/cardboard/small.jpg" alt="…")
+							- var description = "…";
+							- var width = "2792";
+							- var height = "1574";
+
+							stellar-image.nt6.nl6.db.relative.z-2.w-70(width=`${width}` height=`${height}` preload=`/assets/img/${hero_image_name}/thumb.jpg`)
+								source(srcset=`/assets/img/${hero_image_name}/full.jpg` media="(min-width:1023px) and (min-device-pixel-ratio: 2)")
+								source(srcset=`/assets/img/${hero_image_name}/medium.jpg` media="(min-width:1023px)")
+								source(srcset=`/assets/img/${hero_image_name}/medium.jpg` media="(max-width:640px) and (min-device-pixel-ratio: 2)")
+								source(srcset=`/assets/img/${hero_image_name}/small.jpg` media="(max-width:640px)")
 
 						stellar-parallax-section.top--2(speed="-9")
-							stellar-card.w-0.ml6(style="height: max-content;")
+							stellar-card.overflow-hidden.bg-theme-complement6(style="--border: 0")
 								stellar-animate-text(method="fade")
 									block hero
 										copy-wrap(align="left")
-											h1.fs-massive.theme-base5.fw8.lh-solid #{title}
+											h1.fs-massive.theme-base5.fw8.lh-solid.large-shadow-tl #{title}
 
 			block content
 				stellar-layout(type="sidebar-right" align="top")
@@ -192,17 +189,16 @@ html(class=`theme-${theme} complement-${complement} hanken-sans` lang="en-US")
 							source(srcset=`/assets/img/${name}/medium.jpg` media="(min-width:1023px)")
 							source(srcset=`/assets/img/${name}/medium.jpg` media="(max-width:640px) and (min-device-pixel-ratio: 2)")
 							source(srcset=`/assets/img/${name}/small.jpg` media="(max-width:640px)")
-							img(srcset=`/assets/img/${name}/small.jpg` alt=`${description}`)
 
 						h1 nice
 
 		stellar-layout.db.relative(size="small")
 			stellar-starscape
 			stellar-grid(padding)
-				stellar-card(tag="a" href="/hire-me" style="--background: transparent; --border: 0;")
-					div.absolute.bg-theme-base5.db.h-100.left-0.top-0.w-100.z-0
-					copy-wrap.relative.z-1(align="center")
-						h1.white.fs1.mb4 Want to collaborate?
-						stellar-button(block class=`theme-${complement}`) Hire me!
+				stellar-card.overflow-hidden(tag="a" href="/hire-me" style="--background: transparent; --border: 0;" padding="none")
+					div.absolute.bg-theme-base6.db.h-100.left-0.top-0.w-100.z-0
+					copy-wrap.relative.z-1.pa4(align="center")
+						h1.fs-large.white.fs1.mb4.lh-solid.long-shadow-bl.fw7(class=`complement-${theme}`) Like what you see?!
+					stellar-button.relative.z-2(block class=`theme-${complement}`) Hire me!
 
 		block body_scripts
